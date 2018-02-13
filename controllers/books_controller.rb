@@ -13,25 +13,30 @@ end
 
 
 
+
 # Landing Page
  get '/' do
    '<h1>This is the blank Landing Page</h1>'
  end
 
  get '/books' do
-   '<h1>This is the index page for books</h1>'
+
+   erb :'books/index'
  end
 
  get '/books/new' do
-   '<h1>This is the page for adding new books</h1>'
+
+   erb :'books/new'
  end
 
  get '/books/:id' do
-   '<h1>This is the page for viewing each book</h1>'
+
+   erb :'books/:id'
  end
 
  get '/books/:id/edit' do
-   '<h1>This is the page for editing existing books</h1>'
+   
+   erb :'books/:id/edit'
  end
 
 end
