@@ -1,0 +1,7 @@
+<h1>This is the index page for books</h1>
+
+<% @books.each do |books| %>
+  <div class="">
+    <a href="/books/<%= books[:id] %>">See More About <%= books[:title] %></a>
+  </div>
+<% end %>
